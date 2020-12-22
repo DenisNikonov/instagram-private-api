@@ -2,7 +2,7 @@ import { defaultsDeep, inRange, random } from 'lodash';
 import { createHmac } from 'crypto';
 import { Subject } from 'rxjs';
 import { AttemptOptions, retry } from '@lifeomic/attempt';
-import * as request from 'request-promise';
+import request from 'request-promise';
 import { Options, Response } from 'request';
 import { IgApiClient } from './client';
 import {

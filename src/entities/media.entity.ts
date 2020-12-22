@@ -1,4 +1,4 @@
-import * as request from 'request-promise';
+import request from 'request-promise';
 import { Entity } from '../core/entity';
 import { MediaEntityOembedResponse } from '../responses';
 

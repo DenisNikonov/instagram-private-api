@@ -3,7 +3,7 @@ import 'dotenv/config';
 import { IgApiClient } from '../src';
 import { json2ts } from 'json-ts/dist';
 import { camelCase } from 'lodash';
-import * as fs from 'fs';
+import fs from 'fs';
 import { promisify } from 'util';
 
 /* async fs functions - uncomment the needed wrappers */
@@ -51,9 +51,11 @@ async function login() {
   ig.state.generateDevice(process.env.IG_USERNAME);
   await login();
   try {
-    console.log(await ig.publish.photo({
-      file: await readFileAsync('D:\\ShareX\\Screenshots\\2020-01-10_19-47-29.jpg'),
-    }));
+    console.log(
+      await ig.publish.photo({
+        file: await readFileAsync('D:\\ShareX\\Screenshots\\2020-01-10_19-47-29.jpg'),
+      }),
+    );
   } catch (e) {
     console.error(e);
     console.error(e.response.body);
