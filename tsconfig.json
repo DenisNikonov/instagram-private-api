@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["es7"],
+    "lib": ["es6"],
     "declaration": true,
     "esModuleInterop": false,
     "module": "commonjs",
